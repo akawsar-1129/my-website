@@ -7,7 +7,7 @@
   <title>Document</title>
 
   <style>
-    * {
+     {
       box-sizing: border-box;
     }
 
@@ -31,7 +31,7 @@
 
     .header {
       border: 4px dotted red;
-      background-color: royalblue;
+      background-color: lightblue;
       grid-column: 1 / span 3;
       position: sticky;
       top: 0;
@@ -41,18 +41,36 @@
     .menu {
       border: 4px dotted blue;
       grid-column: 1 / span 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
 
     .main {
       border: 4px dotted red;
       grid-column: 1 / span 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .menu > div,
+    .main > div,
+    .sidebar > div {
+      border: 2px dotted currentColor;
+      padding: 20px;
     }
 
     .sidebar {
-      display: none;
+      display: grid;
+        grid-template-columns: 1fr 1fr;
+      border: 4px dotted green;
+       grid-column: 1 / span 3;
+      gap: 10px;
     }
 
     .footer {
+      background-color: white;
       border: 4px dotted greenyellow;
       grid-column: 1 / span 3;
     }
@@ -71,7 +89,7 @@
       }
 
       .sidebar {
-        display: block;
+        display:none;
         grid-column: 3 / span 1;
       }
 
@@ -88,11 +106,20 @@
 
     <div class="header">Header</div>
 
-    <div class="menu">Menu</div>
+    <div class="menu">
+      <div>Menu 1</div>
+      <div>Menu 2</div>
+    </div>
 
-    <div class="main">Main</div>
+    <div class="main">
+      <div>Main 1</div>
+      <div>Main 2</div>
+    </div>
 
-    <div class="sidebar">Sidebar</div>
+    <div class="sidebar">
+      <div>Sidebar 1</div>
+      <div>Sidebar 2</div>
+    </div>
 
     <div class="footer">Footer</div>
 
