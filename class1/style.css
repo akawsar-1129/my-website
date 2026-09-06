@@ -1,0 +1,19 @@
+
+body {
+    
+    
+    
+    background: linear-gradient(to right, rgb(163, 78, 78), rgb(99, 99, 197));
+   
+}
+ .box {
+    border: 2px solid black;
+    padding: 20px;
+    background:linear-gradient( to left, rgb(73, 122, 73),rgb(216, 216, 55));
+    width: fit-content;
+}
+
+button {
+ 
+    background-color: aquamarine;
+}
